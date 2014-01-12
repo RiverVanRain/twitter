@@ -6,10 +6,9 @@
 	 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
 	 * @author RiverVanRain
 	 * @URL http://weborganizm.org/crewz/p/1983/personal-net
-	 * @copyright (c) weborganiZm 2k13
+	 * @copyright (c) RiverVanRain 2014
 	 */
 elgg_load_js('elgg.twitter');
-elgg_load_js('elgg.twitztab');
 elgg_load_js('elgg.organictabs');
 
 $username = $vars['entity']->twitter_username;
@@ -84,3 +83,8 @@ $twitter_search_url = "<a class=\"twitter-timeline\"  href=\"https://twitter.com
 			</ul>
 		</div>
 	</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#twitztab").organicTabs();
+});
+</script>
