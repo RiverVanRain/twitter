@@ -8,12 +8,13 @@
 	 * @URL http://weborganizm.org/crewz/p/1983/personal-net
 	 * @copyright (c) RiverVanRain 2014
 	 */
+$widget = $vars["entity"];
 ?>
 <div>
 		<b><?php echo elgg_echo("twitterz:username"); ?></b>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_username]',
-		'value' => $vars['entity']->twitter_username,
+		'value' => $widget->twitter_username,
 		)) ?>
 </div>
 <div><b><?php echo elgg_echo("twitterz_wid:title"); ?></b></div>
@@ -21,7 +22,7 @@
 		<?php echo elgg_echo("twitter:widget_id"); ?>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_widget_id]',
-		'value' => $vars['entity']->twitter_widget_id,
+		'value' => $widget->twitter_widget_id,
 		)) ?>
 </div>
 <div><b><?php echo elgg_echo("twitterz_favorites:title"); ?></b></div>
@@ -29,7 +30,7 @@
 		<?php echo elgg_echo("twitter:widget_id"); ?>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_favorites_widget_id]',
-		'value' => $vars['entity']->twitter_favorites_widget_id,
+		'value' => $widget->twitter_favorites_widget_id,
 		)) ?>
 </div>
 <div><b><?php echo elgg_echo("twitterz_list:title"); ?></b></div>
@@ -37,14 +38,14 @@
 		<?php echo elgg_echo("twitter:list"); ?>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_list]',
-		'value' => $vars['entity']->twitter_list,
+		'value' => $widget->twitter_list,
 		)) ?>
 </div>
 <div>
 		<?php echo elgg_echo("twitter:widget_id"); ?>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_list_widget_id]',
-		'value' => $vars['entity']->twitter_list_widget_id,
+		'value' => $widget->twitter_list_widget_id,
 		)) ?>
 </div>
 <div><b><?php echo elgg_echo("twitterz_search:title"); ?></b></div>
@@ -52,13 +53,13 @@
 		<?php echo elgg_echo("twitter:search_query"); ?>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_search_query]',
-		'value' => $vars['entity']->twitter_search_query,
+		'value' => $widget->twitter_search_query,
 		)) ?>
 </div>
 <div>
 		<?php echo elgg_echo("twitter:widget_id"); ?>
 		<?php echo elgg_view('input/text', array(
 		'name' => 'params[twitter_search_widget_id]',
-		'value' => $vars['entity']->twitter_search_widget_id,
+		'value' => $widget->twitter_search_widget_id,
 		)) ?>
 </div>

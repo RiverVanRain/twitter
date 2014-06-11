@@ -11,8 +11,8 @@
 
 function twitter_init() {
 	elgg_register_widget_type('twitterz', elgg_echo('twitterz:title'), elgg_echo('twitterz:info'), "dashboard,profile,index,groups", false);
-	elgg_register_js('elgg.twitter','mod/twitterz/js/widgets.js', 'footer');
 	elgg_register_js('elgg.organictabs','mod/twitterz/js/organictabs.jquery.js', 'footer');
+    elgg_load_js('elgg.organictabs');
 	elgg_extend_view("css/elgg", "widgets/twitterz/css");
 }
 

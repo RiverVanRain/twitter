@@ -9,7 +9,7 @@
 	 * @copyright (c) RiverVanRain 2014
 	 */
 
-$english = array(
+return array(
 
 	'twitterz:title' => 'Twitter Widgets',
 	'twitterz:info' => 'Twitter Widgets Pack',
@@ -36,5 +36,3 @@ $english = array(
 	'twitter_search:title' => 'Twitter Search',
 	'twitter:search_query' => "Search query",
 );
-
-add_translation("en", $english);
